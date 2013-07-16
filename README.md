@@ -1,4 +1,5 @@
 # NgramsParser [![Gem Version](https://badge.fury.io/rb/ngrams_parser.png)](http://badge.fury.io/rb/ngrams_parser) [![Build Status](https://travis-ci.org/fractalsoft/ngrams_parser.png)](https://travis-ci.org/fractalsoft/ngrams_parser) [![Dependency Status](https://gemnasium.com/fractalsoft/ngrams_parser.png)](https://gemnasium.com/fractalsoft/ngrams_parser) [![Coverage Status](https://coveralls.io/repos/fractalsoft/ngrams_parser/badge.png)](https://coveralls.io/r/fractalsoft/ngrams_parser)
+[![endorse](https://api.coderwall.com/torrocus/endorsecount.png)](https://coderwall.com/torrocus)
 
 N-gram is a contiguous sequence of n items from a given sequence of text or speech. The items are letters, but can be phonemes, syllables, words or base pairs according to the application. The n-grams typically are collected from a text or speech corpus.
 

@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Aleksander Malaszkiewicz"]
   spec.email         = ["info@fractalsoft.org"]
   spec.summary       = %q{Split text into ngrams}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/fractalsoft/ngrams_parser"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

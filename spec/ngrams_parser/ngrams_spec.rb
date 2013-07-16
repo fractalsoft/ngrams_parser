@@ -99,16 +99,35 @@ describe NgramsParser do
           ["i  ", "čin", "inč", "nči", "čil", "ilo", "lov", "ový", "vý "],
           ["ý  ", "čep", "epe", "pec", "ec ", "c  "]
         ].flatten
+      },
+      {
+        text: "99 bottles of beer on the wall,",
+        bigrams: [
+          ["bo", "ot", "tt", "tl", "le", "es", "s "],
+          ["of", "f "],
+          ["be", "ee", "er", "r "],
+          ["on", "n "],
+          ["th", "he", "e "],
+          ["wa", "al", "ll", "l "]
+        ].flatten,
+        trigrams: [
+          ["bot", "ott", "ttl", "tle", "les", "es ", "s  "],
+          ["of ", "f  "],
+          ["bee", "eer", "er ", "r  "],
+          ["on ", "n  "],
+          ["the", "he ", "e  "],
+          ["wal", "all", "ll ", "l  "]
+        ].flatten
       }
     ].each do |hash|
       text, bigrams, trigrams = hash.values
 
       it "split text '#{text}' into bigrams" do
-        klass::ngrams(text, 2).should eq(bigrams)
+        subject.ngrams(text, 2).should eq(bigrams)
       end
 
       it "split text '#{text}' into trigrams" do
-        klass::ngrams(text, 3).should eq(trigrams)
+        subject.ngrams(text, 3).should eq(trigrams)
       end
     end
   end
