@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/fractalsoft/ngrams_parser.png)](http://waffle.io/fractalsoft/ngrams_parser)  
 # NgramsParser [![Gem Version](https://badge.fury.io/rb/ngrams_parser.png)](http://badge.fury.io/rb/ngrams_parser) [![Build Status](https://travis-ci.org/fractalsoft/ngrams_parser.png)](https://travis-ci.org/fractalsoft/ngrams_parser) [![Dependency Status](https://gemnasium.com/fractalsoft/ngrams_parser.png)](https://gemnasium.com/fractalsoft/ngrams_parser) [![Coverage Status](https://coveralls.io/repos/fractalsoft/ngrams_parser/badge.png)](https://coveralls.io/r/fractalsoft/ngrams_parser)
 [![endorse](https://api.coderwall.com/torrocus/endorsecount.png)](https://coderwall.com/torrocus)
 
