@@ -3,8 +3,6 @@ require 'spec_helper'
 
 describe NgramsParser do
   context ".ngram" do
-    let(:klass) { NgramsParser }
-
     [
       {
         text: "Will's",
@@ -20,11 +18,11 @@ describe NgramsParser do
       text, bigrams, trigrams = hash.values
 
       it "split word '#{text}' into bigrams: #{bigrams}" do
-        klass::ngram(text, 2).should eq(bigrams)
+        subject.ngram(text, 2).should eq(bigrams)
       end
 
       it "split word '#{text}' into trigrams: #{trigrams}" do
-        klass::ngram(text, 3).should eq(trigrams)
+        subject.ngram(text, 3).should eq(trigrams)
       end
     end
   end
