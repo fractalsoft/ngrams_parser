@@ -9,3 +9,7 @@
 ## v0.0.3
 
 * ngrams without digits
+
+## v0.0.4
+
+* code clean up

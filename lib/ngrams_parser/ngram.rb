@@ -1,4 +1,6 @@
 # coding: utf-8
+
+# Parse word to ngrams
 module NgramsParser
   # Split word into ngrams
   #
@@ -7,7 +9,7 @@ module NgramsParser
   def self.ngram(word, size)
     array = []
     word.split('').each_index do |index|
-      text = word[index..index+size-1]
+      text = word[index..index + size - 1]
       array << text.ljust(size, ' ')
     end
     array
