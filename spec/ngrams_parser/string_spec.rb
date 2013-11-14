@@ -23,9 +23,9 @@ describe NgramsParser::String do
         'ipsu', 'psum', 'sum ', 'um  ', 'm   '
       ]
 
-      string.ngrams(2).should eq(bigrams)
-      string.ngrams(3).should eq(trigrams)
-      string.ngrams(4).should eq(quadgrams)
+      expect(string.ngrams(2)).to eq(bigrams)
+      expect(string.ngrams(3)).to eq(trigrams)
+      expect(string.ngrams(4)).to eq(quadgrams)
     end
   end
 end

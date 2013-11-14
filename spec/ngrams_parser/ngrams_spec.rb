@@ -126,11 +126,11 @@ describe NgramsParser do
       text, bigrams, trigrams = hash.values
 
       it "split text '#{text}' into bigrams" do
-        subject.ngrams(text, 2).should eq(bigrams)
+        expect(subject.ngrams(text, 2)).to eq(bigrams)
       end
 
       it "split text '#{text}' into trigrams" do
-        subject.ngrams(text, 3).should eq(trigrams)
+        expect(subject.ngrams(text, 3)).to eq(trigrams)
       end
     end
   end

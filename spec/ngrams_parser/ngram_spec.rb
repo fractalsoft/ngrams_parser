@@ -20,11 +20,11 @@ describe NgramsParser do
       text, bigrams, trigrams = hash.values
 
       it "split word '#{text}' into bigrams: #{bigrams}" do
-        subject.ngram(text, 2).should eq(bigrams)
+        expect(subject.ngram(text, 2)).to eq(bigrams)
       end
 
       it "split word '#{text}' into trigrams: #{trigrams}" do
-        subject.ngram(text, 3).should eq(trigrams)
+        expect(subject.ngram(text, 3)).to eq(trigrams)
       end
     end
   end
